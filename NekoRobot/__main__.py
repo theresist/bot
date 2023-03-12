@@ -133,22 +133,22 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕",
+            text=f"ᴀᴅᴅ {BOT_NAME} ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕",
             url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
-        InlineKeyboardButton(text="𝐇𝐄𝐋𝐏 & 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 ⚙", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
         InlineKeyboardButton(
-            text="𝐀𝐁𝐎𝐔𝐓 𝐌𝐄 🥀", url="https://t.me/ABOUT_YOUR_SHIV"
+            text="ᴀʙᴏᴜᴛ ᴍᴇ 🥀", url="https://t.me/ABOUT_YOUR_SHIV"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🛠", url=f"https://telegram.dog/TSO_CHATS"
+            text="sᴜᴘᴘᴏʀᴛ 🛠", url=f"https://telegram.dog/TSO_CHATS"
         ),
         InlineKeyboardButton(
-            text="𝐔𝐏𝐀𝐃𝐓𝐄𝐒 🚀", url="https://telegram.dog/TSO_UPDATES"
+            text="ᴜᴘᴅᴀᴛᴇs 🚀", url="https://telegram.dog/TSO_UPDATES"
         ),
     ],
 ]
@@ -308,11 +308,11 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🛠",
+                            text="sᴜᴘᴘᴏʀᴛ 🛠",
                             url=f"https://telegram.dog/TSO_CHATS",
                         ),
                         InlineKeyboardButton(
-                            text="𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🚀",
+                            text="ᴜᴘᴀᴅᴛᴇs 🚀",
                             url="https://telegram.dog/TSO_UPADTES",
                         ),
                     ]
@@ -676,11 +676,11 @@ def donate(update: Update, context: CallbackContext) -> None:
                     [
                         [
                             InlineKeyboardButton(
-                                text="𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🚀",
+                                text="ᴜᴘᴅᴀᴛᴇs 🚀",
                                 url="https://telegram.dog/TSO_UPDATES",
                             ),
                             InlineKeyboardButton(
-                                text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🛠",
+                                text="sᴜᴘᴘᴏʀᴛ 🛠",
                                 url=f"https://telegram.dog/TSO_CHATS",
                             ),
                         ]
