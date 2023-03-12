@@ -83,7 +83,7 @@ def inlinequery(update: Update, _) -> None:
             },
             {
                 "title": "About",
-                "description": "Know about Neko X",
+                "description": "Know about TSO MANAGER",
                 "message_text": "Click the button below to get to know about Neko X.",
                 "thumb_urL": "https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
                 "keyboard": ".about ",
@@ -195,7 +195,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
         [
             [
                 InlineKeyboardButton(
-                    text="Report Error", url="https://t.me/Besties_XD"
+                    text="Report Error", url="https://t.me/tso_chats"
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -233,12 +233,12 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
     user = context.bot.get_chat(user_id)
     sql.update_user(user.id, user.username)
     about_text = f"""
-    [Neko X](https://t.me/NekoCuteBot)\n*Bot State:* `Alive`\n*Python:* `{python_version()}`\n*Pyrogram:* `{pyrover}`\n*Platform:* `{sys.platform}`\n*python-telegram-bot:* `v{str(__version__)}`
+    [TSO MANAGER](https://t.me/TSO_MANAGER_BOT)\n*Bot State:* `Alive`\n*Python:* `{python_version()}`\n*Pyrogram:* `{pyrover}`\n*Platform:* `{sys.platform}`\n*python-telegram-bot:* `v{str(__version__)}`
     """
     kb = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="Support", url="https://t.me/Besties_XD"),
+                InlineKeyboardButton(text="Support", url="https://t.me/tso_chats"),
                 InlineKeyboardButton(
                     text="Sys Stats",
                     callback_data="pingCB",
@@ -326,7 +326,7 @@ def spb(query: str, update: Update, context: CallbackContext) -> None:
         [
             [
                 InlineKeyboardButton(
-                    text="Report Error", url="https://t.me/Besties_XD"
+                    text="Report Error", url="https://t.me/tso_chats"
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -477,7 +477,7 @@ def media_query(query: str, update: Update, context: CallbackContext) -> None:
                 [
                     InlineKeyboardButton(
                         text="Report error",
-                        url="https://t.me/Besties_XD",
+                        url="https://t.me/tso_chats",
                     ),
                     InlineKeyboardButton(
                         text="Search again",
