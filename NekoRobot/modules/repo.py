@@ -31,7 +31,7 @@ from NekoRobot.events import register
 PHOTO = "https://telegra.ph/file/70061cba45ee824dad6f6.jpg"
 
 
-@register(pattern=(""))
+@register(pattern=())
 async def awake(event):
     NEKO = """
          We Are So Happy To Announce That We Have Public Our NekoRobot Repo. ✨🥀
