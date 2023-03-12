@@ -121,34 +121,34 @@ NEKO_STICKERS = (
 
 PM_START_TEXT = """
 ────「 [{}](https://telegra.ph/file/9996ec2eafdef4692102d.jpg) 」────
-*Hola! {},*
-*Meow Meow, Don't Touch Me Without My Permission!*
+*𝐇𝐞𝐥𝐥𝐨! {},*
+*𝐌𝐞𝐨𝐰 𝐌𝐞𝐨𝐰, 𝐃𝐨𝐧'𝐭 𝐓𝐨𝐮𝐜𝐡 𝐌𝐞 𝐖𝐢𝐭𝐡𝐨𝐮𝐭 𝐌𝐲 𝐏𝐞𝐫𝐦𝐮𝐬𝐬𝐢𝐨𝐧!*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❍ *Uptime:* `{}`
 ❍ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Guidelines Button Below To Know My Abilities ××
+➛ 𝐓𝐫𝐲 𝐓𝐡𝐞 𝐇𝐞𝐥𝐩 & 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐁𝐮𝐭𝐭𝐨𝐧 𝐁𝐞𝐥𝐨𝐰 𝐓𝐨 𝐊𝐧𝐨𝐰 𝐌𝐲 𝐀𝐛𝐢𝐥𝐢𝐭𝐢𝐞𝐬 ;)
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"Add {BOT_NAME} To Your Group",
+            text=f"𝐀𝐃𝐃 {BOT_NAME} 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕",
             url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
-        InlineKeyboardButton(text="📓 Guidelines", callback_data="help_back"),
+        InlineKeyboardButton(text="𝐇𝐄𝐋𝐏 & 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 ⚙", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Source 🌐", url="https://github.com/Awesome-Prince/NekoRobot-3.git"
+            text="𝐀𝐁𝐎𝐔𝐓 𝐌𝐄 🥀", url="https://t.me/ABOUT_YOUR_SHIV"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="🚑 Support", url=f"https://telegram.dog/{SUPPORT_CHAT}"
+            text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🛠", url=f"https://telegram.dog/TSO_CHATS"
         ),
         InlineKeyboardButton(
-            text="📢 Updates", url="https://telegram.dog/Programmer_Updates"
+            text="𝐔𝐏𝐀𝐃𝐓𝐄𝐒 🚀", url="https://telegram.dog/TSO_UPDATES"
         ),
     ],
 ]
@@ -308,12 +308,12 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🚑 Support",
-                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                            text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🛠",
+                            url=f"https://telegram.dog/TSO_CHATS",
                         ),
                         InlineKeyboardButton(
-                            text="📢 Updates",
-                            url="https://telegram.dog/Programmer_Updates",
+                            text="𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🚀",
+                            url="https://telegram.dog/TSO_UPADTES",
                         ),
                     ]
                 ]
@@ -676,12 +676,12 @@ def donate(update: Update, context: CallbackContext) -> None:
                     [
                         [
                             InlineKeyboardButton(
-                                text="📢 Updates",
-                                url="https://telegram.dog/Programmer_Updates",
+                                text="𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🚀",
+                                url="https://telegram.dog/TSO_UPDATES",
                             ),
                             InlineKeyboardButton(
-                                text="🚑 Support",
-                                url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                                text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🛠",
+                                url=f"https://telegram.dog/TSO_CHATS",
                             ),
                         ]
                     ]
