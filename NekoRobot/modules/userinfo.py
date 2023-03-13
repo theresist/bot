@@ -238,10 +238,10 @@ def info(update: Update, context: CallbackContext):
     buttons = [
         [
             InlineKeyboardButton(
-                text="Health", url="https://t.me/Programmer_Updates/10"
+                text="Health", url="https://t.me/TSO_UPDATES/6"
             ),
             InlineKeyboardButton(
-                text="Disasters", url="https://t.me/Programmer_Updates/11"
+                text="Disasters", url="https://t.me/TSO_UPDATES/7"
             ),
         ],
     ]
@@ -324,8 +324,8 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe Disaster level of this person is 'Tiger'."
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Wolf'."
-    elif user.id == 5561111332:
-        text += "\n\nSenorita Is Girlfriend Of @Its_IZ_PRINCE_xD."
+    elif user.id == : 5686536025
+        text += "\n\n....... Is Girlfriend Of @ll_TSO_KING_ll."
 
     try:
         user_member = chat.get_member(user.id)
@@ -458,14 +458,14 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/Programmer_Updates)\n\n"
-            + "\n╘══「 by [Programmer • Network](https://t.me/Programmer_Network) 」\n",
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/tso_Updates)\n\n"
+            + "\n╘══「 by [tso • Network](https://t.me/tso_updates) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Repo", url="github.com/Awesome-Prince/NekoRobot-3"
+                            text="OWNER", url="https://t.me/ll_TSO_KING_ll"
                         )
                     ]
                 ]
@@ -479,16 +479,16 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/Programmer_Updates)\n\n"
+                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/tso_Updates)\n\n"
                 )
-                + "╘══「 by [Programmer • Network](https://t.me/Programmer_Network) 」\n"
+                + "╘══「 by [tso • Network](https://t.me/tso_updates) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Repo", url="github.com/Awesome-Prince/NekoRobot-3"
+                            text="OWNER", url="https://t.me/ll_TSO_KING_ll"
                         )
                     ]
                 ]
