@@ -324,7 +324,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe Disaster level of this person is 'Tiger'."
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Wolf'."
-    elif user.id == :5686536025
+    elif user.id == 5686536025:
         text += "\n\n....... Is Girlfriend Of @ll_TSO_KING_ll."
 
     try:
