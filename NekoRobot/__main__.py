@@ -133,22 +133,22 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"𝐀𝐝𝐝 {BOT_NAME} 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩➕",
+            text=f"add {BOT_NAME} to your group➕",
             url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
         InlineKeyboardButton(text="𝐡𝐞𝐥𝐩 & 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬", callback_data="help_back"),
         InlineKeyboardButton(
-            text="𝐚𝐛𝐨𝐮𝐭 𝐦𝐞🥀", url="https://t.me/ABOUT_YOUR_SHIV"
+            text="owner 💸", url="https://t.me/ll_tso_king_ll"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="𝐬𝐮𝐩𝐩𝐨𝐫𝐭 🛠", url=f"https://telegram.dog/TSO_CHATS"
+            text="support 🛠", url=f"https://telegram.dog/TSO_CHATS"
         ),
         InlineKeyboardButton(
-            text="𝐮𝐩𝐝𝐚𝐭𝐞𝐬 🚀", url="https://telegram.dog/TSO_UPDATES"
+            text="updates 🚀", url="https://telegram.dog/TSO_UPDATES"
         ),
     ],
 ]
@@ -171,7 +171,7 @@ GROUP_START_IMG = (
     "https://te.legra.ph/file/c2526c05d65fd2fbfa58b.jpg",
 )
 
-DONATE_STRING = """❂ I'm Free for Everyone ❂"""
+DONATE_STRING = """I'm Free for Everyone"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -262,7 +262,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             [
                                 InlineKeyboardButton(
-                                    text="[► Back ◄]", callback_data="help_back"
+                                    text="Back", callback_data="help_back"
                                 )
                             ]
                         ]
@@ -308,11 +308,11 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝐬𝐮𝐩𝐩𝐨𝐫𝐭 🛠",
+                            text="support 🛠",
                             url=f"https://telegram.dog/TSO_CHATS",
                         ),
                         InlineKeyboardButton(
-                            text="𝐮𝐩𝐝𝐚𝐭𝐞𝐬 🚀",
+                            text="updates 🚀",
                             url="https://telegram.dog/TSO_UPADTES",
                         ),
                     ]
@@ -386,10 +386,10 @@ def help_button(update: Update, context: CallbackContext) -> None:
                     [
                         [
                             InlineKeyboardButton(
-                                text="[► Back ◄]", callback_data="help_back"
+                                text="Back", callback_data="help_back"
                             ),
                             InlineKeyboardButton(
-                                text="[► Support ◄]", url=f"https://t.me/{SUPPORT_CHAT}"
+                                text="Support", url=f"https://t.me/{SUPPORT_CHAT}"
                             ),
                         ]
                     ]
@@ -490,7 +490,7 @@ def get_help(update: Update, context: CallbackContext) -> None:
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
             ),
         )
 
@@ -676,11 +676,11 @@ def donate(update: Update, context: CallbackContext) -> None:
                     [
                         [
                             InlineKeyboardButton(
-                                text="𝐮𝐩𝐝𝐚𝐭𝐞𝐬 🚀",
+                                text="updates 🚀",
                                 url="https://telegram.dog/TSO_UPDATES",
                             ),
                             InlineKeyboardButton(
-                                text="𝐬𝐮𝐩𝐩𝐨𝐫𝐭 🛠",
+                                text="support 🛠",
                                 url=f"https://telegram.dog/TSO_CHATS",
                             ),
                         ]
