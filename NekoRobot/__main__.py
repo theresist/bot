@@ -121,34 +121,34 @@ NEKO_STICKERS = (
 
 PM_START_TEXT = """
 ────「 [{}](https://telegra.ph/file/9996ec2eafdef4692102d.jpg) 」────
-*𝐇𝐞𝐥𝐥𝐨! {},*
-*𝐌𝐞𝐨𝐰 𝐌𝐞𝐨𝐰, 𝐃𝐨𝐧'𝐭 𝐓𝐨𝐮𝐜𝐡 𝐌𝐞 𝐖𝐢𝐭𝐡𝐨𝐮𝐭 𝐌𝐲 𝐏𝐞𝐫𝐦𝐮𝐬𝐬𝐢𝐨𝐧!*
+*ʜᴇʏ! {},*
+*ɪ'ᴍ ᴛsᴏ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ, ɪ ᴄᴀɴ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ !*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❍ *Uptime:* `{}`
 ❍ `{}` *Users, Across* `{}` *Chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ 𝐓𝐫𝐲 𝐓𝐡𝐞 𝐇𝐞𝐥𝐩 & 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐁𝐮𝐭𝐭𝐨𝐧 𝐁𝐞𝐥𝐨𝐰 𝐓𝐨 𝐊𝐧𝐨𝐰 𝐌𝐲 𝐀𝐛𝐢𝐥𝐢𝐭𝐢𝐞𝐬 ;)
+➛ ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ? ᴜғғ ᴊᴜsᴛ ᴛᴀᴘ ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴜ ᴄᴀɴ sᴇᴇ ᴍʏ ᴀʟʟ ᴍᴏᴅᴜʟᴇs ɴᴅ ᴄᴏᴍᴍᴀɴᴅs ;)
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"add {BOT_NAME} to your group➕",
+            text=f" {BOT_NAME} ᴍᴇᴏᴡ ᴍᴇᴏᴡ",
             url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
         InlineKeyboardButton(text="𝐡𝐞𝐥𝐩 & 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬", callback_data="help_back"),
         InlineKeyboardButton(
-            text="owner 💸", url="https://t.me/ll_tso_king_ll"
+            text="ᴏᴡɴᴇʀ", url="https://t.me/ll_tso_king_ll"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="support 🛠", url=f"https://telegram.dog/TSO_CHATS"
+            text="sᴜᴘᴘᴏʀᴛ", url=f"https://telegram.dog/TSO_CHATS"
         ),
         InlineKeyboardButton(
-            text="updates 🚀", url="https://telegram.dog/TSO_UPDATES"
+            text="ᴜᴘᴅᴀᴛᴇs", url="https://telegram.dog/TSO_UPDATES"
         ),
     ],
 ]
@@ -262,7 +262,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             [
                                 InlineKeyboardButton(
-                                    text="Back", callback_data="help_back"
+                                    text="ʙᴀᴄᴋ", callback_data="help_back"
                                 )
                             ]
                         ]
@@ -308,11 +308,11 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="support 🛠",
+                            text="sᴜᴘᴘᴏʀᴛ",
                             url=f"https://telegram.dog/TSO_CHATS",
                         ),
                         InlineKeyboardButton(
-                            text="updates 🚀",
+                            text="ᴜᴘᴅᴀᴛᴇs",
                             url="https://telegram.dog/TSO_UPADTES",
                         ),
                     ]
@@ -386,10 +386,10 @@ def help_button(update: Update, context: CallbackContext) -> None:
                     [
                         [
                             InlineKeyboardButton(
-                                text="Back", callback_data="help_back"
+                                text="ʙᴀᴄᴋ", callback_data="help_back"
                             ),
                             InlineKeyboardButton(
-                                text="Support", url=f"https://t.me/{SUPPORT_CHAT}"
+                                text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
                             ),
                         ]
                     ]
@@ -439,7 +439,7 @@ def neko_callback_data(update: Update, context: CallbackContext) -> None:
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="neko_back")]]
+                [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="neko_back")]]
             ),
         )
     elif query.data == "neko_back":
@@ -634,7 +634,7 @@ def get_settings(update: Update, context: CallbackContext) -> None:
                 [
                     [
                         InlineKeyboardButton(
-                            text="Settings",
+                            text="sᴇᴛᴛɪɴɢs",
                             url=f"https://telegram.dog/{NEKO_PTB.bot.username}?start=stngs_{chat.id}",
                         )
                     ]
@@ -676,11 +676,11 @@ def donate(update: Update, context: CallbackContext) -> None:
                     [
                         [
                             InlineKeyboardButton(
-                                text="updates 🚀",
+                                text="ᴜᴘᴅᴀᴛᴇs",
                                 url="https://telegram.dog/TSO_UPDATES",
                             ),
                             InlineKeyboardButton(
-                                text="support 🛠",
+                                text="sᴜᴘᴘᴏʀᴛ",
                                 url=f"https://telegram.dog/TSO_CHATS",
                             ),
                         ]
