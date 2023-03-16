@@ -28,20 +28,20 @@ from telethon import Button
 from NekoRobot import tbot
 from NekoRobot.events import register
 
-PHOTO = "https://telegra.ph/file/70061cba45ee824dad6f6.jpg"
+PHOTO = "https://te.legra.ph/file/18e8d74e1d3d4b17581c8.mp4"
 
 
 @register(pattern=("/repo"))
 async def awake(event):
     NEKO = """
-         LUND LELE MERA
+         ᴄᴏᴍᴍɪɴɢ sᴏᴏɴ !
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-YOUR DAD @ll_TSO_KING_ll
-➖➖➖➖➖➖➖➖➖➖➖➖➖
+ᴏᴡɴᴇʀ ɪɴғᴏ 💸
+
 ┏━━━━━━━━━❥
-┣ ᴍᴜsɪᴄ -> @TSO_PLAYER_BOT
-┣ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ-> @TSO_MANAGER_BOT
-┣ ᴍᴏʀᴇ ɪɴ ᴘʀᴏɢʀᴇss -> 
+┣ ᴛᴇʟᴇɢʀᴀᴍ -> @ABOUT_YOUR_SHIV
+┣ ɪɴsᴛᴀɢʀᴀᴍ -> ᴛʜᴇ_sʜɪᴠ_ᴏғғɪᴄɪᴀʟ
+┣ ʏᴏᴜᴛᴜʙᴇ -> ᴛʜᴇ_sʜɪᴠ_ᴏғғɪᴄɪᴀʟ
 ┗━━━━━━━━━❥
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 
@@ -52,8 +52,8 @@ POWERED BY:- @TSO_CHATS
 
     BUTTON = [
         [
-            Button.url("ABOUT ME", "https://t.me/ABOUT_YOUR_SHIV"),
-            Button.url("DON'T TAP", "https://te.legra.ph/file/f3d98dda492293f91b7c8.mp4"),
+            Button.url("ɢɪᴛʜᴜʙ", "Github.com/T5OKING"),
+            Button.url("ᴛᴀᴋᴇ", "https://te.legra.ph/file/87669dc5f87f29988ed40.mp4"),
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
