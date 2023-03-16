@@ -11,11 +11,11 @@ from NekoRobot.events import register
 
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/36440524ecd0a6b65138f.jpg"
-file2 = "https://telegra.ph/file/b0868af85d1d17554a6d4.jpg"
-file3 = "https://telegra.ph/file/60c612b4736560f9b98b9.jpg"
-file4 = "https://telegra.ph/file/a502e6322a201f5949058.jpg"
-file5 = "https://telegra.ph/file/737a7b4d519887c35ed21.jpg"
+file1 = "https://te.legra.ph/file/8f9df3c46b0ee27ba6ee9.jpg"
+file2 = "https://te.legra.ph/file/349cf5ded28be244fbfd4.jpg"
+file3 = "https://te.legra.ph/file/97f7c3ddbb17b6a6f5a06.jpg"
+file4 = "https://te.legra.ph/file/5561b91b4547a49c09987.jpg"
+file5 = "https://te.legra.ph/file/a14904e785a7b1a8f3e84.jpg"
 """ =======================CONSTANTS====================== """
 
 
@@ -24,11 +24,11 @@ async def proboyx(event):
     await event.get_chat()
     datetime.utcnow()
     betsy = event.sender.first_name
-    button = [[custom.Button.inline("Click Here", data="information")]]
+    button = [[custom.Button.inline("ᴄʟɪᴄᴋ ʜᴇʀᴇ ", data="information")]]
     on = await bot.send_file(
         event.chat_id,
         file=file2,
-        caption=f"♡ Hey {betsy}, I'm Tso Manager\n♡ I'm Created By [TSO KING](tg://user?id=5686536025)\n♡ Click The Button Below To Get Your Info",
+        caption=f"ʜᴇʏ {betsy}, ɪ'ᴍ ᴛsᴏ ᴍᴀɴᴀɢᴇʀ\nɪ'ᴍ ᴄʀᴇᴀᴛᴇᴅ ʙʏ [TSO KING](tg://user?id=5686536025)\n♡ Click The Button Below To Get Your Info",
         buttons=button,
     )
 
@@ -65,20 +65,20 @@ async def callback_query_handler(event):
     try:
         boy = event.sender_id
         PRO = await bot.get_entity(boy)
-        NEKO = "YOUR DETAILS BY NEKO \n\n"
-        NEKO += f"FIRST NAME : {PRO.first_name} \n"
-        NEKO += f"LAST NAME : {PRO.last_name}\n"
-        NEKO += f"YOU BOT : {PRO.bot} \n"
-        NEKO += f"RESTRICTED : {PRO.restricted} \n"
-        NEKO += f"USER ID : {boy}\n"
-        NEKO += f"USERNAME : {PRO.username}\n"
+        NEKO = "ʏᴏᴜʀ  ᴅᴇᴛᴀɪʟs ʙʏ ᴛsᴏ ᴍᴀɴᴀɢᴇʀ \n\n"
+        NEKO += f"ғɪʀsᴛ ɴᴀᴍᴇ : {PRO.first_name} \n"
+        NEKO += f"ʟᴀsᴛ ɴᴀᴍᴇ : {PRO.last_name}\n"
+        NEKO += f"ʏᴏᴜ ʙᴏᴛ : {PRO.bot} \n"
+        NEKO += f"ʀᴇsᴛʀɪᴄᴛᴇᴅ : {PRO.restricted} \n"
+        NEKO += f"ᴜsᴇʀ ɪᴅ  : {boy}\n"
+        NEKO += f"ᴜsᴇʀɴᴀᴍᴇ : {PRO.username}\n"
         await event.answer(NEKO, alert=True)
     except Exception as e:
         await event.reply(f"{e}")
 
 
 __help__ = """
-/myinfo: shows your info in inline button
+/myinfo: sʜᴏᴡ ʏᴏᴜʀ ɪɴғᴏ ɪɴ ɪɴʟɪɴᴇ ʙᴜᴛᴛᴏɴ
 """
 
 __mod_name__ = "myinfo"
