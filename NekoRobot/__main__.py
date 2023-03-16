@@ -108,8 +108,8 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
-START_MSG = "I'm Awake Already!\n<b>Haven't Slept Since:</b> <code>{}</code>"
+HELP_MSG = "ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛᴏ ʜᴇᴛ ʜᴇʟᴘ ᴍᴇɴᴜ ɪɴ ʏᴏᴜʀ ᴅᴍ."
+START_MSG = "ɪ'ᴍ ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!!\n<b>Haven't Slept Since:</b> <code>{}</code>"
 
 NEKO_STICKERS = (
     "CAACAgUAAxkBAAIIW2NL5v9F9hUom4xmsgNYb63SEfZZAAIZBgACYAF5VIerYoMcSln8KgQ",
@@ -123,10 +123,10 @@ PM_START_TEXT = """
 ────「 [{}](https://te.legra.ph/file/01b9f05be8126427d0f49.jpg) 」────
 *ʜᴇʏ! {},*
 *ɪ'ᴍ ᴛsᴏ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ, ɪ ᴄᴀɴ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ !*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-❍ *Uptime:* `{}`
-❍ `{}` *Users, Across* `{}` *Chats.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
+
+❍ *ᴜᴘᴛɪᴍᴇ:* `{}`
+❍ `{}` *ᴜsᴇʀs, ᴀᴄʀᴏss* `{}` *ᴄʜᴀᴛs.*
+
 ➛ ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ? ᴜғғ ᴊᴜsᴛ ᴛᴀᴘ ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴜ ᴄᴀɴ sᴇᴇ ᴍʏ ᴀʟʟ ᴍᴏᴅᴜʟᴇs ɴᴅ ᴄᴏᴍᴍᴀɴᴅs ;)
 """
 
@@ -171,7 +171,7 @@ GROUP_START_IMG = (
     "https://te.legra.ph/file/27b6b26df840124077976.jpg",
 )
 
-DONATE_STRING = """I'm Free for Everyone"""
+DONATE_STRING = """ɪ'ᴍ ғʀᴇᴇ ғᴏʀ ᴇᴠᴇʀʏᴏɴᴇ"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -302,7 +302,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             random.choice(GROUP_START_IMG),
-            caption=f"<b>Yes, Master I'm alive!\nHaven't sleep since</b>: <code>{uptime}</code>",
+            caption=f"<b>ʏᴇs, ᴍᴀsᴛᴇʀ ɪ'ᴍ ᴀʟɪᴠᴇ!\nHaven't sleep since</b>: <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -472,7 +472,7 @@ def get_help(update: Update, context: CallbackContext) -> None:
                 [
                     [
                         InlineKeyboardButton(
-                            text="Open In Private Chat",
+                            text="ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ",
                             url=f"t.me/{NEKO_PTB.bot.username}?start=help",
                         )
                     ]
@@ -671,7 +671,7 @@ def donate(update: Update, context: CallbackContext) -> None:
             )
 
             update.effective_message.reply_text(
-                text="I'm free for everyone❤️\njust donate by subs channel, Don't forget to join the support group.",
+                text="ɪ'ᴍ ғʀᴇᴇ ғᴏʀ ᴇᴠᴇʀʏᴏɴᴇ\njust donate by subs channel, Don't forget to join the support group.",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -689,7 +689,7 @@ def donate(update: Update, context: CallbackContext) -> None:
             )
         except Unauthorized:
             update.effective_message.reply_text(
-                "Contact me in PM first to get donation information."
+                "ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ғɪʀsᴛ ᴛᴏ ɢᴇᴛ ᴅᴏɴᴀᴛɪᴏɴ ɪɴғᴏʀᴍᴀᴛɪᴏɴ."
             )
 
 
@@ -755,7 +755,7 @@ def main():
 
     else:
         LOGGER.info(
-            f"Neko started, Using long polling. | BOT: [@{NEKO_PTB.bot.username}]"
+            f"ᴛsᴏ ᴍᴀɴᴀɢᴇʀ sᴛᴀʀᴛᴇᴅᴛ, ᴜsɪɴɢ ʟᴏɴɢ ᴘᴏʟʟɪɴɢ. | BOT: [@{NEKO_PTB.bot.username}]"
         )
         updater.start_polling(
             timeout=15,
