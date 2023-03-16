@@ -138,7 +138,7 @@ buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="𝐡𝐞𝐥𝐩 & 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
         InlineKeyboardButton(
             text="ᴏᴡɴᴇʀ", url="https://t.me/ll_tso_king_ll"
         ),
@@ -643,7 +643,7 @@ def get_settings(update: Update, context: CallbackContext) -> None:
         )
 
     else:
-        text = "Click here to check your settings."
+        text = "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴇᴛᴛɪɴɢs."
 
 
 def donate(update: Update, context: CallbackContext) -> None:
