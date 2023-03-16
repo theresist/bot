@@ -75,21 +75,21 @@ def inlinequery(update: Update, _) -> None:
                 "keyboard": ".spb ",
             },
             {
-                "title": "Account info on Neko X",
+                "title": "ᴀᴄᴄᴏᴜɴᴛ ɪɴғᴏ ᴏɴ ᴛsᴏ ᴍᴀɴᴀɢᴇʀ",
                 "description": "Look up a Telegram account in Miku database",
                 "message_text": "Click the button below to look up a person in Neko X database using their Telegram ID",
                 "thumb_urL": "https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
                 "keyboard": ".info ",
             },
             {
-                "title": "About",
+                "title": "Aᴀʙᴏᴜᴛ",
                 "description": "Know about TSO MANAGER",
                 "message_text": "Click the button below to get to know about Neko X.",
                 "thumb_urL": "https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
                 "keyboard": ".about ",
             },
             {
-                "title": "Anilist",
+                "title": "ᴀɴɪʟɪsᴛ",
                 "description": "Search anime and manga on AniList.co",
                 "message_text": "Click the button below to search anime and manga on AniList.co",
                 "thumb_urL": "https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
@@ -108,7 +108,7 @@ def inlinequery(update: Update, _) -> None:
                         [
                             [
                                 InlineKeyboardButton(
-                                    text="Click Here",
+                                    text="ᴄʟɪᴄᴋ ʜᴇʀᴇ",
                                     switch_inline_query_current_chat=ihelp["keyboard"],
                                 )
                             ]
@@ -195,10 +195,10 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
         [
             [
                 InlineKeyboardButton(
-                    text="Report Error", url="https://t.me/tso_chats"
+                    text="ʀᴇᴘᴏʀᴛ ᴇʀʀᴏʀ", url="https://t.me/tso_chats"
                 ),
                 InlineKeyboardButton(
-                    text="Search again",
+                    text="sᴇᴀʀᴄʜ ᴀɢᴀɪɴ",
                     switch_inline_query_current_chat=".info ",
                 ),
             ]
@@ -240,7 +240,7 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(text="Support", url="https://t.me/tso_chats"),
                 InlineKeyboardButton(
-                    text="Sys Stats",
+                    text="sʏs sᴛᴀᴛs",
                     callback_data="pingCB",
                 ),
             ]
@@ -326,10 +326,10 @@ def spb(query: str, update: Update, context: CallbackContext) -> None:
         [
             [
                 InlineKeyboardButton(
-                    text="Report Error", url="https://t.me/tso_chats"
+                    text="ʀᴇᴘᴏʀᴛ ᴇʀʀᴏʀ", url="https://t.me/tso_chats"
                 ),
                 InlineKeyboardButton(
-                    text="Search again",
+                    text="sᴇᴀʀᴄʜ ᴀɢᴀɪɴ",
                     switch_inline_query_current_chat=".spb ",
                 ),
             ]
@@ -439,11 +439,11 @@ def media_query(query: str, update: Update, context: CallbackContext) -> None:
                 [
                     [
                         InlineKeyboardButton(
-                            text="Read More",
+                            text="ʀᴇᴀᴅ ᴍᴏʀᴇ",
                             url=aurl,
                         ),
                         InlineKeyboardButton(
-                            text="Search again",
+                            text="sᴇᴀʀᴄʜ ᴀɢᴀɪɴ",
                             switch_inline_query_current_chat=".anilist ",
                         ),
                     ],
@@ -476,11 +476,11 @@ def media_query(query: str, update: Update, context: CallbackContext) -> None:
             [
                 [
                     InlineKeyboardButton(
-                        text="Report error",
+                        text="ʀᴇᴘᴏʀᴛ ᴇʀʀᴏʀ",
                         url="https://t.me/tso_chats",
                     ),
                     InlineKeyboardButton(
-                        text="Search again",
+                        text="sᴇᴀʀᴄʜ ᴀɢᴀɪɴ",
                         switch_inline_query_current_chat=".anilist ",
                     ),
                 ],
