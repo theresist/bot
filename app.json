@@ -1,5 +1,5 @@
 {
-      "name": "NekoRobot",
+      "name": "ᴛsᴏ ᴍᴀɴᴀɢᴇʀ",
       "description": "An Anime themed Telegram group management bot.",
       "logo": "https://telegra.ph/file/18e6b01aa06b93c13d1ab.png",
       "keywords": [
@@ -47,7 +47,7 @@
       "BOT_NAME": {
          "description": "Your Bot Name.",
          "required": true,
-         "value": "└𝐓𝐒𝐎⤥𝐌𝐀𝐍𝐀𝐆𝐄𝐑⤦𝐁𝐎𝐓┘"
+         "value": "ᴛsᴏ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ"
       },
       "BOT_USERNAME": {
          "description": "Your Bot UserName Without @.",
@@ -57,12 +57,12 @@
       "ERROR_LOGS": {
          "description": "Error Logs (Channel Ya Group Choice Is Yours)",
          "required": true,
-         "value": "-1001849373188"
+         "value": "-1001339410192"
       },
        "HELP_IMG": {
          "description": "Group Help Img Link.",
          "required": true,
-         "value": "https://telegra.ph/file/ab36976c685575c4e1a5f.png"
+         "value": "https://te.legra.ph/file/57ba5962f44d06595b353.jpg"
       },
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
