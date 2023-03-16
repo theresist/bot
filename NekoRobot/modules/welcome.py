@@ -245,8 +245,8 @@ def new_member(update: Update, context: CallbackContext):
             elif new_mem.id == bot.id:
                 update.effective_message.reply_photo(
                     WAIFUS_IMG,
-                    caption="Hey {}, I'm {}! Thank you for adding me to {}\n"
-                    "Join support and channel update with clicking button below!".format(
+                    caption="ʜᴇʏ {}, ɪ'ᴍ {}! ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ᴛᴏ {}\n"
+                    "ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ᴀɴᴅ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ ᴡɪᴛʜ ᴄʟɪᴄᴋɪɴɢ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ!".format(
                         user.first_name, context.bot.first_name, chat.title
                     ),
                     reply_to_message_id=reply,
@@ -255,12 +255,12 @@ def new_member(update: Update, context: CallbackContext):
                         [
                             [
                                 InlineKeyboardButton(
-                                    text="Support🚑",
-                                    url=f"https://t.me/Besties_XD",
+                                    text="sᴜᴘᴘᴏʀᴛ",
+                                    url=f"https://t.me/TSO_CHATS",
                                 ),
                                 InlineKeyboardButton(
-                                    text="Updates🛰️",
-                                    url="https://t.me/Programmer_Updates",
+                                    text="ᴜᴘᴅᴀᴛᴇs",
+                                    url="https://t.me/TSO_UPDATES",
                                 ),
                             ]
                         ]
@@ -389,12 +389,12 @@ def new_member(update: Update, context: CallbackContext):
                         )
                     new_join_mem = f'<a href="tg://user?id={user.id}">{html.escape(new_mem.first_name)}</a>'
                     message = msg.reply_text(
-                        f"{new_join_mem}, click the button below to prove you're human.\nYou have 120 seconds.",
+                        f"{new_join_mem}, ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ᴘʀᴏᴠᴇ ʏᴏᴜ'ʀᴇ ʜᴜᴍᴀɴ\nYou have 120 seconds.",
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 {
                                     InlineKeyboardButton(
-                                        text="Yes, I'm human.",
+                                        text="ʏᴇs, ɪ'ᴍ ʜᴜᴍᴀɴ",
                                         callback_data=f"user_join_({new_mem.id})",
                                     )
                                 }
@@ -524,7 +524,7 @@ def left_member(update: Update, context: CallbackContext):
             # Give the devs a special goodbye
             elif left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "See you later at the Yūki Network!",
+                    "sᴇᴇ ʏᴏᴜ ʟᴀᴛᴇʀ ᴀᴛ ᴛsᴏ ɴᴇᴛᴡᴏʀᴋ!",
                     reply_to_message_id=reply,
                 )
                 return
