@@ -86,8 +86,8 @@ def paginate_modules(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
                         switch_inline_query_current_chat="",
                     )
                 ),
-                EqInlineKeyboardButton("Back", callback_data="neko_back"),
-                EqInlineKeyboardButton("Support", url="t.me/Besties_XD"),
+                EqInlineKeyboardButton("Bᴀᴄᴋ", callback_data="neko_back"),
+                EqInlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="t.me/tso_chats"),
             ]
         ]
 
