@@ -120,7 +120,7 @@ NEKO_STICKERS = (
 )
 
 PM_START_TEXT = """
-────「 [{}]() 」────
+────「 [{}]( ttps://graph.org/file/810fe2776bcb9a33729fe.jpg)」────
 *ʜᴇʏ! {},*
 *ɪ'ᴍ ᴛsᴏ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ, ɪ ᴄᴀɴ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ !*
 
@@ -164,11 +164,11 @@ HELP_STRINGS = """
 """
 
 GROUP_START_IMG = (
-    "https://te.legra.ph/file/cb678a1162582d5691057.jpg",
     "https://te.legra.ph/file/6006e5cde133cb9c64ffa.jpg",
-    "https://te.legra.ph/file/aa2141d28c1a81ae6cb02.jpg",
-    "https://te.legra.ph/file/cb9343deb26960757d11f.jpg",
-    "https://te.legra.ph/file/27b6b26df840124077976.jpg",
+    "",
+    "",
+    "",
+    "",
 )
 
 DONATE_STRING = """ɪ'ᴍ ғʀᴇᴇ ғᴏʀ ᴇᴠᴇʀʏᴏɴᴇ"""
