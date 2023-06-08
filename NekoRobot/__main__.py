@@ -112,10 +112,10 @@ HELP_MSG = "ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛᴏ ʜᴇᴛ ʜᴇʟᴘ �
 START_MSG = "ɪ'ᴍ ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!!\n<b>Haven't Slept Since:</b> <code>{}</code>"
 
 NEKO_STICKERS = (
-    "",
-    "",
-    "",
-    "",
+    "CAACAgQAAxkBAAPdZIIZNJCS7sUV4kaWBiFlPDvXzg4AArUNAAIKJpBRpGQVsyh2TWIvBA",
+    "CAACAgQAAxkBAAPiZIIZUP0RGYKbrkH1DnijUZvUGEIAAuUZAALE7AlS68niPK1CEW0vBA",
+    "CAACAgQAAxkBAAPsZIIZhDT1GXAVPcdeUtDJRGDZP50AAhoPAAIcvelR6bBdJHf4qzQvBA",
+    "CAACAgQAAxkBAAP2ZIIZnnaLJFV34ELNJL11jO-31CoAApUNAALkdOFRIT5qy1sSgsQvBA",
     "",
 )
 
