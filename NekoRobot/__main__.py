@@ -108,8 +108,8 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-HELP_MSG = "ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛᴏ ʜᴇᴛ ʜᴇʟᴘ ᴍᴇɴᴜ ɪɴ ʏᴏᴜʀ ᴅᴍ."
-START_MSG = "ɪ'ᴍ ᴀᴡᴀᴋᴇ ᴀʟʀᴇᴀᴅʏ!!\n<b>Haven't Slept Since:</b> <code>{}</code>"
+HELP_MSG = "𝐶𝑙𝑖𝑐𝑘 𝑇𝒉𝑒 𝐵𝑢𝑡𝑡𝑜𝑛 𝑇𝑜 𝐺𝑒𝑡 𝐻𝑒𝑙𝑝 𝑀𝑒𝑛𝑢 𝐼𝑛 𝑌𝑜𝑢𝑟 𝑃𝑚"
+START_MSG = "𝐼𝑚 𝐴𝑤𝑎𝑘𝑒 𝐴𝑙𝑟𝑒𝑎𝑑𝑦!!\n<b>Haven't Slept Since:</b> <code>{}</code>"
 
 NEKO_STICKERS = (
     "CAACAgQAAxkBAAPdZIIZNJCS7sUV4kaWBiFlPDvXzg4AArUNAAIKJpBRpGQVsyh2TWIvBA",
