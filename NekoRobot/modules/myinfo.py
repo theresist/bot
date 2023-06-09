@@ -81,5 +81,5 @@ __help__ = """
 /myinfo: sʜᴏᴡ ʏᴏᴜʀ ɪɴғᴏ ɪɴ ɪɴʟɪɴᴇ ʙᴜᴛᴛᴏɴ
 """
 
-__mod_name__ = "myinfo"
-__command_list__ = ["myinfo"]
+__mod_name__ = ""
+__command_list__ = [""]
