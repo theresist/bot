@@ -121,46 +121,48 @@ NEKO_STICKERS = (
 
 PM_START_TEXT = """
 ────「 [{}]( ttps://graph.org/file/810fe2776bcb9a33729fe.jpg)」────
-*ʜᴇʏ! {},*
-*ɪ'ᴍ ᴛsᴏ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ, ɪ ᴄᴀɴ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ !*
+*𝐻𝑖 {}*
+*𝐼𝑚 𝑇𝑠𝑜 𝑀𝑎𝑛𝑎𝑔𝑒𝑟 𝐵𝑜𝑡, 𝐼 𝑐𝑎𝑛 𝑀𝑎𝑛𝑎𝑔𝑒 𝑌𝑜𝑢𝑟 𝐺𝑟𝑜𝑢𝑝*
 
-❍ *ᴜᴘᴛɪᴍᴇ:* `{}`
-❍ `{}` *ᴜsᴇʀs, ᴀᴄʀᴏss* `{}` *ᴄʜᴀᴛs.*
+❍ *𝑈𝑝𝑡𝑖𝑚𝑒:* `{}`
+❍ `{}` *𝑈𝑠𝑒𝑟𝑠, 𝐴𝑐𝑟𝑜𝑠𝑠* `{}` *𝐶𝒉𝑎𝑡𝑠*
 
-➛ ɪғ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴋɴᴏᴡ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ? ᴜғғ ᴊᴜsᴛ ᴛᴀᴘ ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴜ ᴄᴀɴ sᴇᴇ ᴍʏ ᴀʟʟ ᴍᴏᴅᴜʟᴇs ɴᴅ ᴄᴏᴍᴍᴀɴᴅs ;)
+
+𝐼𝑓 𝑌𝑜𝑢 𝐷𝑜𝑛𝑡 𝐾𝑛𝑜𝑤 𝐻𝑜𝑤 𝑇𝑜 𝑈𝑠𝑒 𝑀𝑒 ? 𝑈𝑓𝑓 𝐽𝑢𝑠𝑡 𝑇𝑎𝑝 𝑂𝑛 𝐻𝑒𝑙𝑝 𝐵𝑢𝑡𝑡𝑜𝑛 𝑌𝑜𝑢 𝐶𝑎𝑛 𝑆𝑒𝑒 𝑀𝑦 𝐴𝑙𝑙 𝑀𝑜𝑑𝑢𝑙𝑒𝑠 𝐴𝑛𝑑 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠 ;)
 """
+
 
 buttons = [
     [
         InlineKeyboardButton(
-            text=f" {BOT_NAME} ᴍᴇᴏᴡ ᴍᴇᴏᴡ",
+            text=f" {BOT_NAME} 𝑀𝑒𝑜𝑤 𝑀𝑒𝑜𝑤"),
             url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+        InlineKeyboardButton(text="𝐻𝑒𝑙𝑝", callback_data="help_back"),
         InlineKeyboardButton(
-            text="ᴏᴡɴᴇʀ", url="https://t.me/ll_tso_king_ll"
+            text="𝐷𝑒𝑣", url="https://t.me/ll_tso_king_ll"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="sᴜᴘᴘᴏʀᴛ", url=f"https://telegram.dog/TSO_CHATS"
+            text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡", url=f"https://telegram.dog/TSO_CHATS"
         ),
         InlineKeyboardButton(
-            text="ᴜᴘᴅᴀᴛᴇs", url="https://telegram.dog/TSO_UPDATES"
+            text="𝑈𝑝𝑑𝑎𝑡𝑒𝑠", url="https://telegram.dog/TSO_UPDATES"
         ),
     ],
 ]
 
 HELP_STRINGS = """
-*Main* commands available:
-➛ /help: PM's you this message.
-➛ /help <module name>: PM's you info about that module.
-➛ /donate: information on how to donate!
-➛ /settings:
-   ➛ in PM: will send you your settings for all supported modules.
-   ➛ in a group: will redirect you to pm, with all that chat's settings.
+*𝑀𝑎𝑖𝑛* 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠 𝐴𝑣𝑎𝑖𝑙𝑙𝑎𝑏𝑙𝑒:
+ /help: PM's you this message.
+ /help <module name>: PM's you info about that module.
+ /donate: information on how to donate!
+ /settings:
+    in PM: will send you your settings for all supported modules.
+    in a group: will redirect you to pm, with all that chat's settings.
 """
 
 GROUP_START_IMG = (
