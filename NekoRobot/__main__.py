@@ -157,12 +157,12 @@ buttons = [
 
 HELP_STRINGS = """
 *𝑀𝑎𝑖𝑛* 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠 𝐴𝑣𝑎𝑖𝑙𝑙𝑎𝑏𝑙𝑒:
- /help: PM's you this message.
- /help <module name>: PM's you info about that module.
- /donate: information on how to donate!
- /settings:
-    in PM: will send you your settings for all supported modules.
-    in a group: will redirect you to pm, with all that chat's settings.
+ /help 𝑃𝑚'𝑠 𝑌𝑜𝑢 𝑇𝒉𝑖𝑠 𝑀𝑒𝑠𝑠𝑎𝑔𝑒
+ /help <module name> 𝑃𝑚'𝑠 𝑌𝑜𝑢 𝐼𝑛𝑓𝑜 𝐴𝑏𝑜𝑢𝑡 𝑇𝒉𝑎𝑡 𝑀𝑜𝑑𝑢𝑙𝑒
+ /donate 𝐼𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛 𝑂𝑛 𝐻𝑜𝑤 𝑇𝑜 𝐷𝑜𝑛𝑎𝑡𝑒
+ /settings
+    𝐼𝑛 𝑃𝑚 𝑊𝑖𝑙𝑙 𝑆𝑒𝑛𝑑 𝑌𝑜𝑢 𝑌𝑜𝑢𝑟 𝑆𝑒𝑡𝑡𝑖𝑛𝑔𝑠 𝐹𝑜𝑟 𝐴𝑙𝑙 𝑆𝑢𝑝𝑝𝑜𝑟𝑡𝑒𝑑 𝑀𝑜𝑑𝑢𝑙𝑒𝑠 will
+    𝐼𝑛 𝐴 𝐺𝑟𝑜𝑢𝑝 𝑊𝑖𝑙𝑙 𝑅𝑒𝑑𝑖𝑟𝑒𝑐𝑡 𝑌𝑜𝑢 𝑇𝑜 𝑃𝑚 𝑊𝑖𝑡𝒉 𝐴𝑙𝑙 𝑇𝒉𝑎𝑡 𝐶𝒉𝑎𝑡𝑠 𝑆𝑒𝑡𝑡𝑖𝑛𝑔𝑠
 """
 
 GROUP_START_IMG = (
@@ -173,7 +173,7 @@ GROUP_START_IMG = (
     "",
 )
 
-DONATE_STRING = """ɪ'ᴍ ғʀᴇᴇ ғᴏʀ ᴇᴠᴇʀʏᴏɴᴇ"""
+DONATE_STRING = """𝑌𝑜𝑢𝑟 𝑊𝑖𝑠𝒉"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -264,7 +264,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             [
                                 InlineKeyboardButton(
-                                    text="ʙᴀᴄᴋ", callback_data="help_back"
+                                    text="𝐵𝑎𝑐𝑘", callback_data="help_back"
                                 )
                             ]
                         ]
@@ -304,17 +304,17 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             random.choice(GROUP_START_IMG),
-            caption=f"<b>ʏᴇs, ᴍᴀsᴛᴇʀ ɪ'ᴍ ᴀʟɪᴠᴇ!\nHaven't sleep since</b>: <code>{uptime}</code>",
+            caption=f"<b>𝑌𝑒𝑠 𝐵𝑎𝑏𝑦 𝐼𝑚 𝐴𝑙𝑖𝑣𝑒\nHaven't sleep since</b>: <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ",
+                            text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡",
                             url=f"https://telegram.dog/TSO_CHATS",
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs",
+                            text="𝑈𝑝𝑑𝑎𝑡𝑒𝑠",
                             url="https://telegram.dog/TSO_UPADTES",
                         ),
                     ]
@@ -388,10 +388,10 @@ def help_button(update: Update, context: CallbackContext) -> None:
                     [
                         [
                             InlineKeyboardButton(
-                                text="ʙᴀᴄᴋ", callback_data="help_back"
+                                text="𝐵𝑎𝑐𝑘", callback_data="help_back"
                             ),
                             InlineKeyboardButton(
-                                text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+                                text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡", url=f"https://t.me/{SUPPORT_CHAT}"
                             ),
                         ]
                     ]
@@ -441,7 +441,7 @@ def neko_callback_data(update: Update, context: CallbackContext) -> None:
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="neko_back")]]
+                [[InlineKeyboardButton(text="𝐵𝑎𝑐𝑘", callback_data="neko_back")]]
             ),
         )
     elif query.data == "neko_back":
@@ -474,7 +474,7 @@ def get_help(update: Update, context: CallbackContext) -> None:
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ",
+                            text="𝑂𝑝𝑒𝑛 𝐼𝑛 𝑃𝑟𝑖𝑣𝑎𝑡𝑒",
                             url=f"t.me/{NEKO_PTB.bot.username}?start=help",
                         )
                     ]
@@ -565,7 +565,7 @@ def settings_button(update: Update, context: CallbackContext) -> None:
             except AttributeError:
                 keyboard = []
             kbrd = InlineKeyboardMarkup(
-                InlineKeyboardButton(text="Back", callback_data=f"stngs_back({chat_id}")
+                InlineKeyboardButton(text="𝐵𝑎𝑐𝑘", callback_data=f"stngs_back({chat_id}")
             )
             keyboard.append(kbrd)
             query.message.edit_text(
@@ -636,7 +636,7 @@ def get_settings(update: Update, context: CallbackContext) -> None:
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴇᴛᴛɪɴɢs",
+                            text="𝑆𝑒𝑡𝑡𝑖𝑛𝑔𝑠",
                             url=f"https://telegram.dog/{NEKO_PTB.bot.username}?start=stngs_{chat.id}",
                         )
                     ]
@@ -645,7 +645,7 @@ def get_settings(update: Update, context: CallbackContext) -> None:
         )
 
     else:
-        text = "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴇᴛᴛɪɴɢs."
+        text = "𝐶𝑙𝑖𝑐𝑘 𝐻𝑒𝑟𝑒 𝑇𝑜 𝐶𝒉𝑒𝑐𝑘 𝑌𝑜𝑢𝑟 𝑆𝑒𝑡𝑡𝑖𝑛𝑔𝑠"
 
 
 def donate(update: Update, context: CallbackContext) -> None:
@@ -673,16 +673,16 @@ def donate(update: Update, context: CallbackContext) -> None:
             )
 
             update.effective_message.reply_text(
-                text="ɪ'ᴍ ғʀᴇᴇ ғᴏʀ ᴇᴠᴇʀʏᴏɴᴇ\njust donate by subs channel, Don't forget to join the support group.",
+                text="𝑌𝑜𝑢𝑟 𝑊𝑖𝑠𝒉\njust donate by subs channel, Don't forget to join the support group.",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="ᴜᴘᴅᴀᴛᴇs",
+                                text="𝑈𝑝𝑑𝑎𝑡𝑒𝑠",
                                 url="https://telegram.dog/TSO_UPDATES",
                             ),
                             InlineKeyboardButton(
-                                text="sᴜᴘᴘᴏʀᴛ",
+                                text="𝑆𝑢𝑝𝑝𝑜𝑟𝑡𝑠",
                                 url=f"https://telegram.dog/TSO_CHATS",
                             ),
                         ]
@@ -691,7 +691,7 @@ def donate(update: Update, context: CallbackContext) -> None:
             )
         except Unauthorized:
             update.effective_message.reply_text(
-                "ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ɪɴ ᴘᴍ ғɪʀsᴛ ᴛᴏ ɢᴇᴛ ᴅᴏɴᴀᴛɪᴏɴ ɪɴғᴏʀᴍᴀᴛɪᴏɴ."
+                "𝐶𝑜𝑛𝑡𝑎𝑐𝑡 𝑀𝑒 𝐼𝑛 𝑃𝑚 𝐹𝑖𝑟𝑠𝑡 𝑇𝑜 𝐺𝑒𝑡 𝐷𝑜𝑛𝑎𝑡𝑖𝑜𝑛 𝐼𝑛𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛"
             )
 
 
@@ -757,7 +757,7 @@ def main():
 
     else:
         LOGGER.info(
-            f"ᴛsᴏ ᴍᴀɴᴀɢᴇʀ sᴛᴀʀᴛᴇᴅᴛ, ᴜsɪɴɢ ʟᴏɴɢ ᴘᴏʟʟɪɴɢ. | BOT: [@{NEKO_PTB.bot.username}]"
+            f"𝑇𝑠𝑜 𝑀𝑎𝑛𝑎𝑔𝑒𝑟 𝐵𝑜𝑡 𝑆𝑡𝑎𝑟𝑡𝑒𝑑𝑡 𝑈𝑠𝑖𝑛𝑔 𝐿𝑜𝑛𝑔 𝑃𝑜𝑙𝑙𝑖𝑛𝑔. | BOT: [@{NEKO_PTB.bot.username}]"
         )
         updater.start_polling(
             timeout=15,
