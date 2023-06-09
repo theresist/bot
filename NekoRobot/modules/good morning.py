@@ -28,10 +28,10 @@ from telethon import Button
 from NekoRobot import tbot
 from NekoRobot.events import register
 
-PHOTO = "https://te.legra.ph/file/7a18675abd9b75230735d.mp4"
+PHOTO = "https://te.legra.ph/file/0eedbb6d84710ccd7fe2d.jpg" 
 
 
-@register(pattern=("Good morning"))
+@register(pattern=("'%##4%&&53222233$%@222"))
 async def awake(event):
     NEKO = f" Welcome this beautiful morning with a smile on your face. I hope youll have a great day today. Wishing you a very good morning! {event.sender.first_name}"
     BUTTON = [
