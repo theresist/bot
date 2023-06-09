@@ -34,26 +34,30 @@ PHOTO = "https://te.legra.ph/file/18e8d74e1d3d4b17581c8.mp4"
 @register(pattern=("/repo"))
 async def awake(event):
     NEKO = """
-         ᴄᴏᴍᴍɪɴɢ sᴏᴏɴ !
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-ᴏᴡɴᴇʀ ɪɴғᴏ 💸
-
-┏━━━━━━━━━❥
-┣ ᴛᴇʟᴇɢʀᴀᴍ -> @ABOUT_YOUR_SHIV
-┣ ɪɴsᴛᴀɢʀᴀᴍ -> ᴛʜᴇ_sʜɪᴠ_ᴏғғɪᴄɪᴀʟ
-┣ ʏᴏᴜᴛᴜʙᴇ -> ᴛʜᴇ_sʜɪᴠ_ᴏғғɪᴄɪᴀʟ
-┗━━━━━━━━━❥
-➖➖➖➖➖➖➖➖➖➖➖➖➖
+         𝑆𝑜𝑜𝑛 !
 
 
 
-POWERED BY:- @TSO_CHATS
+𝐷𝑒𝑣 ~ @ABOUT_YOUR_SHIV
+
+𝑆𝑢𝑝𝑝𝑜𝑟𝑡 ~ @TSO_CHATS
+
+𝑈𝑝𝑑𝑎𝑡𝑒𝑠 ~ TSO_UPDATES
+
+
+
+
+
+
+
+
+
 """
 
     BUTTON = [
         [
-            Button.url("ɢɪᴛʜᴜʙ", "Github.com/WASTERTSO"),
-            Button.url("ᴛᴀᴋᴇ", "https://te.legra.ph/file/87669dc5f87f29988ed40.mp4"),
+            Button.url("𝐺𝑖𝑡𝒉𝑢𝑏", "GITHUB.COM/WASTERTSO"),
+            Button.url("𝑇𝑎𝑘𝑒", "https://te.legra.ph/file/87669dc5f87f29988ed40.mp4"),
         ]
     ]
     await tbot.send_file(event.chat_id, PHOTO, caption=NEKO, buttons=BUTTON)
