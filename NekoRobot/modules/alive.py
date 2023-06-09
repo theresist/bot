@@ -73,17 +73,17 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    NekoX = f"**  ʜᴇʏ [{yes.sender.first_name}](tg://user?id={yes.sender.id}) ɪ'ᴍ {BOT_NAME} **\n\n"
-    NekoX += f"** ᴍʏ ᴜᴘᴛɪᴍᴇ :** `{uptime}`\n\n"
-    NekoX += f"** ᴘʏᴛʜᴏɴ-ᴛᴇʟᴇɢʀᴀᴍ-ʙᴏᴛ ᴠᴇʀsɪᴏɴ :** `{ptb}`\n\n"
-    NekoX += f"** ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}`\n\n"
-    NekoX += f"** ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}`\n\n"
-    NekoX += "** ᴍʏ ᴍsᴀᴛᴇʀ :** [ᴛsᴏ ᴋɪɴɢ](https://t.me/ll_TSO_KING_ll) "
-    NekoX += f" ᴛʜᴀɴᴋs ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ɪɴ {yes.chat.title}"
+    NekoX = f"**  𝐻𝑒𝑦 [{yes.sender.first_name}](tg://user?id={yes.sender.id})  {BOT_NAME} **\n\n"
+    NekoX += f"** 𝑀𝑦 𝑈𝑝𝑡𝑖𝑚𝑒 :** `{uptime}`\n\n"
+    NekoX += f"** 𝑃𝑦𝑡𝒉𝑜𝑛𝑒 𝑇𝑒𝑙𝑒𝑔𝑟𝑎𝑚 𝐵𝑜𝑡 𝑉𝑒𝑟𝑠𝑖𝑜𝑛 :** `{ptb}`\n\n"
+    NekoX += f"** 𝑇𝑒𝑙𝑒𝑡𝒉𝑜𝑛𝑒 𝑉𝑒𝑟𝑠𝑖𝑜𝑛 :** `{tlhver}`\n\n"
+    NekoX += f"** 𝑃𝑦𝑟𝑜𝑔𝑟𝑎𝑚 𝑉𝑒𝑟𝑠𝑖𝑜𝑛 :** `{pyrover}`\n\n"
+    NekoX += "**  𝐷𝑒𝑣 :** [𝑌𝑜𝑢𝑟 𝑆𝒉𝑖𝑣](https://t.me/ll_TSO_KING_ll) "
+    NekoX += f" 𝑇𝒉𝑎𝑛𝑘𝑠 𝐹𝑜𝑟 𝐴𝑑𝑑𝑖𝑛𝑔 𝑀𝑒 𝐼𝑛 {yes.chat.title}"
     BUTTON = [
         [
-            Button.url("ʜᴇʟᴘ", f"https://t.me/{BOT_USERNAME}?start=help"),
-            Button.url("sᴜᴘᴘᴏʀᴛ", f"https://t.me/{SUPPORT_CHAT}"),
+            Button.url("𝐻𝑒𝑙𝑝", f"https://t.me/{BOT_USERNAME}?start=help"),
+            Button.url("𝑆𝑢𝑝𝑝𝑜𝑟𝑡", f"https://t.me/{SUPPORT_CHAT}"),
         ]
     ]
     on = await neko.send_file(yes.chat_id, file=file2, caption=NekoX, buttons=BUTTON)
