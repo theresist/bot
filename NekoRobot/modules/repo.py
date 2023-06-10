@@ -46,7 +46,7 @@ async def awake(event):
 
 
 
-𝑈𝑝𝑑𝑎𝑡𝑒𝑠 ~@ TSO_UPDATES
+𝑈𝑝𝑑𝑎𝑡𝑒𝑠 ~ @TSO_UPDATES
 
 
 
