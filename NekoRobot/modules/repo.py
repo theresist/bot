@@ -40,9 +40,13 @@ async def awake(event):
 
 𝐷𝑒𝑣 ~ @ABOUT_YOUR_SHIV
 
+
+
 𝑆𝑢𝑝𝑝𝑜𝑟𝑡 ~ @TSO_CHATS
 
-𝑈𝑝𝑑𝑎𝑡𝑒𝑠 ~ TSO_UPDATES
+
+
+𝑈𝑝𝑑𝑎𝑡𝑒𝑠 ~@ TSO_UPDATES
 
 
 
