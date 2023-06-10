@@ -31,7 +31,7 @@ from NekoRobot.events import register
 PHOTO = "https://te.legra.ph/file/0eedbb6d84710ccd7fe2d.jpg" 
 
 
-@register(pattern=("'%##4%&&53222233$%@222"))
+@register(pattern=("gooddd nihnth"))
 async def awake(event):
     NEKO = f" Welcome this beautiful morning with a smile on your face. I hope youll have a great day today. Wishing you a very good morning! {event.sender.first_name}"
     BUTTON = [
