@@ -151,7 +151,7 @@ NEKO_PTB.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 NEKO_PTB.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 NEKO_PTB.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
-__mod_name__ = "Afk"
+__mod_name__ = "𝐼𝑛𝑓𝑜~𝐴𝑓𝑙"
 __command_list__ = ["afk"]
 __handlers__ = [
     (AFK_HANDLER, AFK_GROUP),
