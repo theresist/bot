@@ -153,7 +153,7 @@ __help__ = """
 *Powered By @tso_updates*
 """
 
-__mod_name__ = "ChatBot"
+__mod_name__ = "𝐶𝒉𝑎𝑡𝑏𝑜𝑡"
 
 
 CHATBOTK_HANDLER = CommandHandler("chatbot", kuki, run_async=True)
